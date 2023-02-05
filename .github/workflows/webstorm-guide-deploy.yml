@@ -10,7 +10,7 @@ jobs:
       - name: webstorm-guide-deploy
         uses: jenkey2011/vuepress-deploy@master
         env:
-          ACCESS_TOKEN: ${{ secrets.WEBSRORM_GUIDE }}
+          ACCESS_TOKEN: ${{ secrets.WEBSTORM_GUIDE }}
           TARGET_REPO: qinghuanI/webstorm-guide
           TARGET_BRANCH: gh_pages
           BUILD_SCRIPT: yarn && yarn docs:build
