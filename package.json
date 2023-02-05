@@ -1,0 +1,25 @@
+{
+  "name": "webstorm-guide",
+  "description": "the purpose of this guide is to introduce Web developer to that use of WebStorm",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "qinghuanI",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "prettier": "prettier --write docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.8",
+    "@vuepress/plugin-medium-zoom": "^1.9.8",
+    "prettier": "^2.8.2",
+    "vuepress": "^1.9.8"
+  },
+  "dependencies": {
+    "@vuepress/plugin-last-updated": "^1.9.8",
+    "async-validator": "1.11.5",
+    "element-ui": "^2.15.12",
+    "vuepress-plugin-img-lazy": "^1.0.4"
+  }
+}
