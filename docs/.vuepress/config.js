@@ -1,9 +1,12 @@
 const themeConfig = {
-  lastUpdated: "上次更新",
-  // smoothScroll: true,
+  lastUpdated: "Last Updated",
+  smoothScroll: true,
   repo: "qinghuanI/webstorm-guide",
   editLinks: true,
-  editLinkText: "帮助我们改善此页面！",
+  editLinkText: "在 GitHub 上编辑此页",
+  docsRepo: "qinghuanI/webstorm-guide",
+  docsDir: "docs",
+  docsBranch: "main",
   sidebar: [
     {
       title: "指南",
