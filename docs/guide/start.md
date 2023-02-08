@@ -54,19 +54,19 @@ WebStorm 默认使用英文界面，但是也支持简体中文界面
 
 英文等宽字体， 笔画清晰、可读性强
 
-![SF mono](../guide/images/base/sf_mono.png)
+![SF mono](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/sf_mono.png)
 
 #### [Roboto mono](https://fonts.google.com/specimen/Roboto+Mono/about)
 
 `Roboto Mono` 优化各种设备和屏幕阅读环境的可读性
 
-![Roboto mono](../guide/images/base/roboto_mono.png)
+![Roboto mono](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/roboto_mono.png)
 
 #### [Fira Code](https://fonts.google.com/specimen/Fira+Code)
 
 Fira 是 Mozilla 主推的字体系列，Fira Code 是基于 Fira Mono 等宽字体的一个扩展，主要特点是加入了编程连字特性
 
-![Fira Code](../guide/images/base/fira_code.png)
+![Fira Code](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/fira_code.png)
 
 ### Console Font
 
@@ -81,25 +81,25 @@ WebStorm [插件市场](https://plugins.jetbrains.com/search?tags=Theme)提供�
 
 #### [GitHub Light](https://plugins.jetbrains.com/plugin/15418-github-theme)
 
-![GitHub Light](./images/base/GitHub-Light.png)
+![GitHub Light](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/github_light_theme.png)
 
 ### dark theme
 
 #### [GitHub Dark Dimmed](https://plugins.jetbrains.com/plugin/15418-github-theme)
 
-![GitHub Dark Dimmed](./images/base/GitHub_Dark_Dimmed.png)
+![GitHub Dark Dimmed](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/github_dark_dimmed_theme.png)
 
 #### [Darcula](https://plugins.jetbrains.com/plugin/15418-github-theme)
 
-![Darcula](./images/base/Darcula.png)
+![Darcula](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/Darcula.png)
 
 #### [Vuesion Theme](https://plugins.jetbrains.com/plugin/12226-vuesion-theme)
 
-![Vuesion Theme](./images/base/Vuesion_Theme.png)
+![Vuesion Theme](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/Vuesion_Theme.png)
 
 有时我们需要切换主题，点击 WebStorm 右上角的 <icons-Setting/> 图标，显示提示框，选择 `Theme...`选项，显示 Theme 弹框
 
-![Switch Theme](./images/start/switch_theme.png)
+![Switch Theme](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/switch_theme.png)
 
 点击主题，即可切换主题
 
@@ -107,20 +107,20 @@ WebStorm [插件市场](https://plugins.jetbrains.com/search?tags=Theme)提供�
 
 ### [Atom Material File Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
 
-![Atom Material File Icons](./images/base/atom_icons.png)
+![Atom Material File Icons](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/atom_icons.png)
 
 ### [Extra Icons](https://plugins.jetbrains.com/plugin/11058-extra-icons)
 
-![Extra Icons](./images/start/extra_icons.png)
+![Extra Icons](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/extra_icons.png)
 
-该图标是付费字体
+该文件图标插件是付费插件
 
 ## 快捷键
 
 使用快捷键可以提高开发效率。WebStorm 提供快捷键表方便开发人员使用。在 `Help -> Keyboard Shortcuts PDF`,
 点击 `Keyboard Shortcuts PDF` 选项，即可下载快捷键 pdf 文件
 
-![Keyboard Shortcuts](./images/base/ReferenceCardForMac.png)
+![Keyboard Shortcuts](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/ReferenceCardForMac.png)
 
 如图所示，WebStorm 根据功能对快捷键进行分类
 
@@ -133,7 +133,7 @@ WebStorm 每次打开项目需要建立索引，当项目文件超级多时，We
 
 按照 `Help -> Change Memory Settings`，点击 `Change Memory Settings` 选项，显示 `Memory Settings` 弹窗
 
-![Memory Settings](./images/base/memory_settings.png)
+![Memory Settings](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/memory_settings.png)
 
 根据电脑配置配置合理的内存大小，推荐使用 `4G（4096MiB）` 的内存大小，然后点击 `Save and Restart` 按钮让设置生效
 
@@ -141,7 +141,7 @@ WebStorm 每次打开项目需要建立索引，当项目文件超级多时，We
 
 由于特殊原因，开发人员使用 WebStorm 插件市场或安装一些包时，会出来网络无法连接等问题。可以通过配置代理解决
 
-![Proxy](./images/base/proxy.png)
+![Proxy](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/webstorm_proxy.png)
 
 <el-alert
 title="前提是开发人员已有代理服务"
@@ -158,6 +158,6 @@ WebStorm 提供了设置同步的功能。可以将自己的配置同步到云�
 
 WebStorm 提供了丰富的功能，可以通过使用 `command + ,` 快捷键调出 `Preferences` 弹窗
 
-![Command Panel](./images/base/command_panel.png)
+![Command Panel](https://cdn.jsdelivr.net/gh/qinghuanI/webstorm-guide-images@main/uPic/command_panel.png)
 
 在搜索框内输入功能名称，点击选择功能，右侧可以看到该功能的详情配置，根据使用情况调整配置，最后点击 `OK` 按钮让配置生效
