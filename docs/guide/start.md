@@ -149,10 +149,19 @@ type="warning"
 :closable='false'>
 </el-alert>
 
-### Settings Repository
+### Settings Sync
 
-WebStorm 提供了设置同步的功能。可以将自己的配置同步到云端。这里的云端总共有两种形式，第一种是归属于 JetBrains 账号下，通过账号进行同步。第二种是可以利用 Github 项目进行同步。
-可以同步的设置包括：IDE 主题、键盘映射、配色方案、系统设置、UI 设置、菜单和工具栏设置、项目视图设置、编辑器设置、代码完成设置、参数名称提示、实时模板、代码样式和列表启用和禁用的插件
+在 `2022.3.2` 版本中，WebStorm 提供了同步设置的功能。可以将自己的配置通过账号同步到云端。可以同步的设置包括：IDE 主题、键盘映射、配色方案、系统设置、UI 设置、菜单和工具栏设置、项目视图设置、编辑器设置、代码完成设置、参数名称提示、实时模板、代码样式和列表启用和禁用的插件
+
+使用 `command + ,` 快捷键，点击 `Settings Sync` 选项，如下图所示
+
+![Settings Sync](./images/settings_sync_page.png)
+
+点击 `Enable Settings Sync...` 按钮
+
+![Settings Sync](./images/settings_sync.png)
+
+勾选需要同步的内容，点击 `Push Settings to Account`，将配置上传到云上，或者点击 `Get Settings from Account` 按钮将云上的配置同步到项目上
 
 ### 其他
 
