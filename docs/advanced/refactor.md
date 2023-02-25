@@ -6,13 +6,15 @@ WebStorm 的一大亮点功能就是**重构**
 
 - 方法提取
 - 变量命名语义化、业务化
+- 将大组件拆成多个小组件
+- 移动或拷贝文件
 
 而 WebStorm 支持重构自动化，开发人员只需要选中需要重构的代码执行对应的重构方法即可完成重构。WebStorm 将重构的工作变的简单、高效。
 下面是 WebStorm 支持的主要重构方法
 
 ## 重命名
 
-重命名指修改变量名、类名和文件名
+重命名指修改变量名、函数名、类名和文件名。WebStorm 会更新注释、字符串和文本（对于文件）中对文件或文件夹的引用，帮助开发人员减少错误。
 
 ## 更改签名
 
@@ -21,7 +23,8 @@ WebStorm 的一大亮点功能就是**重构**
 使用`更改签名`功能前
 
 ```js
-function result() {}
+function result() {
+}
 
 function show_result() {
   alert("Result: " + result())
@@ -31,7 +34,8 @@ function show_result() {
 使用`更改签名`功能后
 
 ```js
-function generate_result(input) {}
+function generate_result(input) {
+}
 
 function show_result() {
   alert("Result: " + generate_result(100))
@@ -54,7 +58,7 @@ function show_result() {
 
 ## 拷贝文件
 
-复制文件是拷贝选中的文件
+`Copy File...` 功能指拷贝选中的文件
 
 选择 `Copy File...` 选项，显示 `Copy` 弹框
 
@@ -71,23 +75,32 @@ function show_result() {
 比如，现在有这样的一段代码
 
 ```js
-console.log("WebStorm 使用指南")
+function print() {
+  console.log("WebStorm 使用指南")
+}
+
+print()
 ```
 
-`console.log` 方法直接输出一段文本，但是我们希望`console.log` 方法接收的参数是变量，变量的值是文本。那么可以使用`引入变量`功能实现
+`console.log` 方法直接输出一段文本，但是我们希望`console.log` 方法接收的参数是变量，变量的值是文本。那么可以使用`引入变量`
+功能实现
 
 光标选中文本，点击鼠标右键，显示上下文操作菜单，选择 `Refactor`操作， 再选择 `Intruduce Variable...` 选项，结果如下
 
 ```js
-const message = "WebStorm 使用指南"
-console.log(message)
+function print() {
+  let data = "WebStorm 使用指南"; // <--- 文本赋值给变量
+  console.log(data)
+}
+
+print()
 ```
 
 ## 引入常量
 
-引入常量是将内容替换成常量并替换所有使用该内容的位置。与引入变量的功能差不多
+引入常量是将内容替换成常量并替换所有使用该内容的位置。与引入变量的作用差不多
 
-光标选中内容，点击鼠标右键，显示上下文操作菜单，选择 `Refactor` 操作， 再选择 `Intruduce Constants...` 选项。例子如下
+光标选中内容，点击鼠标右键，显示上下文操作菜单，选择 `Refactor` 操作， 再选择 `Intruduce Constants...` 选项，将内容赋值给常量。代码示例如下
 
 使用 `引入常量` 功能前
 
@@ -109,7 +122,7 @@ function calcPerimeter(diameter) {
 
 ## 引入字段
 
-<el-alert 
+<el-alert
 title='引入字段仅在类中可用'
 type='warning'
 effect='dark'
@@ -117,7 +130,7 @@ effect='dark'
 show-icon>
 </el-alert>
 
-引入字段声明了一个新字段并使用选定的表达式对其进行初始化。原始表达式被替换为字段的用法。
+引入字段声明了一个新字段并使用选定的表达式对其进行初始化。原始表达式被替换为字段的用法
 
 使用`引入字段`功能前
 
@@ -162,6 +175,22 @@ class Rectangle {
 
 ## 引入函数参数
 
+使用引入函数参数功能将函数调用中的表达式替换为参数。WebStorm 将相应地更新函数的声明和调用。新参数的默认值可以在函数体内初始化或通过函数调用传递
+
+
+使用引入函数参数前
+```ts
+function calc(num2: number): number {
+  return num2 + 2;
+}
+```
+使用引入函数参数后
+
+```js
+function calc(num2: number, number: number = 2): number {
+  return num2 + number;
+}
+```
 ## 提取方法
 
 提取方法是将一段代码逻辑封装成新方法
@@ -227,12 +256,12 @@ function Header(props) {
   )
 }
 
-Header.propTypes = { title: PropTypes.string }
+Header.propTypes = {title: PropTypes.string}
 
 const Article = () => {
   return (
     <div>
-      <Header />
+      <Header/>
       <section>
         <p>content</p>
       </section>
@@ -241,11 +270,10 @@ const Article = () => {
 }
 ```
 
-## 提取超类
-
 ## 安全删除
 
-安全删除可让开发人员安全地从源代码中删除文件和符号。为了确保删除是安全的，WebStorm 会查找被删除的符号的用法。如果找到这种用法，则可以在符号被删除之前探索它们并在代码中进行必要的更正
+安全删除可让开发人员安全地从源代码中删除文件和符号。为了确保删除是安全的，WebStorm
+会查找被删除的符号的用法。如果找到这种用法，则可以在符号被删除之前探索它们并在代码中进行必要的更正
 
 选中要删除的变量或方法，点击鼠标右键，从功能菜单上选择 Refactor 功能，再点击 `Safe Delete...` 选项，如下图所示
 
@@ -259,6 +287,5 @@ WebStorm 以 `Usages Detected` 弹窗显示安全删除的检索结果。理论�
 
 ![Safe Delete](./images/refactor/safe_delete_03.png)
 
-`View Usages` 功能会显示 `Safe Delete Conflicts` 面板，将要删除的变量或方法的详细情况呈现出来，供开发人员确认，确认无误后点击 `Do Refactor` 按钮删除
-
-## inline refactorings
+`View Usages` 功能会显示 `Safe Delete Conflicts`
+面板，将要删除的变量或方法的详细情况呈现出来，供开发人员确认，确认无误后点击 `Do Refactor` 按钮删除
