@@ -121,7 +121,7 @@ WebStorm 根据上下文给出五条操作，第一条操作就是将单引号�
 
 WebStorm 的 `command + option + l` 快捷键对当前的文件进行简单的格式化，但是这远远不够。
 
-`Prettier` 是一个强制的代码格式化程序，支持: `JavaScript` (including experimental features)、`JSX`、`Angular`、`Vue`、`Flow`、`TypeScript`、`CSS`、`Less`、`SCSS`、`HTML`、`Ember/Handlebars`、`JSON`、`Markdown`、`GFM`、`MDX`、`YAML` 格式
+`Prettier` 是一个强制的代码格式化工具，支持: `JavaScript` (including experimental features)、`JSX`、`Angular`、`Vue`、`Flow`、`TypeScript`、`CSS`、`Less`、`SCSS`、`HTML`、`Ember/Handlebars`、`JSON`、`Markdown`、`GFM`、`MDX`、`YAML` 格式
 
 首先在项目根目录安装 `prettier` 包
 
@@ -133,13 +133,7 @@ yarn add prettier -D
 
 ![Prettier Configuration](./images/lint/prettier_configuration.png)
 
-第一步选择使用 Prettier package 版本，作者选择的是 `prettier@2.8.2`
-
-然后输入需要格式化的文件类型，只需要在输入对应的文件扩展名即可
-
-最后勾选上 `On 'Reformat Code' action` 和 `On save` 选项，保存配置
-
-当我们修改文件后，只需要 `command + s` 保存文件 Prettier 自动格式化代码
+第一步选择使用 Prettier package 版本，作者选择的是 `prettier@2.8.2`，然后在 `Run for files` 里输入需要格式化的文件扩展名，最后勾选上 `On 'Reformat Code' action` 和 `On save` 选项，保存配置。当我们修改文件后，只需要按下 `command + s` 保存文件，Prettier 会自动格式化代码
 
 上述操作只能对单个文件格式化。如果要格式化项目中多个文件，可以在 `package.json` 的 `scripts` 进行配置
 
@@ -150,6 +144,8 @@ yarn add prettier -D
   }
 }
 ```
+
+然后在终端里运行 `yarn run prettier` 脚本
 
 ## ESLint
 
@@ -168,6 +164,18 @@ yarn add eslint -D
 在根目录配置完 ESLint 配置文件后， 通过 `Preferences -> Languages&Framework -> Javascript -> Code Quality Tool -> ESLint` 配置 ESLint
 
 填写需要检查的文件类型、勾选 `Run eslint --fix on save`，当保存修改的时候，ESLint 自动对代码进行格式化
+
+或者在 `package.json` 的 `scripts` 添加下面的脚本
+
+```json
+{
+  "scripts": {
+    "eslint": "eslint --ext . --fix"
+  }
+}
+```
+
+然后在终端里运行 `yarn run eslint` 脚本
 
 ## StyleLint
 
