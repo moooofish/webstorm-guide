@@ -17,7 +17,6 @@
     "vuepress": "^1.9.8"
   },
   "dependencies": {
-    "@vuepress/plugin-last-updated": "^1.9.8",
     "async-validator": "1.11.5",
     "element-ui": "^2.15.12",
     "vuepress-plugin-img-lazy": "^1.0.4"

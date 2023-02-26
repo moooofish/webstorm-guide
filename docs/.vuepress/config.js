@@ -1,5 +1,4 @@
 const themeConfig = {
-  lastUpdated: "Last Updated",
   smoothScroll: true,
   repo: "qinghuanI/webstorm-guide",
   editLinks: true,
