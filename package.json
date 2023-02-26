@@ -1,10 +1,23 @@
 {
   "name": "webstorm-guide",
+  "private": false,
   "description": "the purpose of this guide is to introduce Web developer to that use of WebStorm",
   "version": "0.0.1",
-  "main": "index.js",
   "author": "qinghuanI",
   "license": "MIT",
+  "homepage": "https://github.com/qinghuanI/webstorm-guide#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qinghuanI/webstorm-guide/"
+  },
+  "engines": {
+    "node": ">10"
+  },
+  "keywords": [
+    "WebStorm",
+    "VuePress",
+    "Vue.js"
+  ],
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
