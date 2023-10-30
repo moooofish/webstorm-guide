@@ -36,15 +36,15 @@ const themeConfig = {
         ["/advanced/remote", "远程开发"],
       ],
     },
-    {
-      title: "插件开发",
-      collapsable: false,
-      sidebarDepth: 1,
-      children: [
-        ["/plugins/theme_plugin", "主题插件"],
-        ["/plugins/function_plugin", "功能插件"],
-      ],
-    },
+    // {
+    //   title: "插件开发",
+    //   collapsable: false,
+    //   sidebarDepth: 1,
+    //   children: [
+    //     ["/plugins/theme_plugin", "主题插件"],
+    //     ["/plugins/function_plugin", "功能插件"],
+    //   ],
+    // },
     {
       title: "生态系统",
       collapsable: false,
@@ -64,6 +64,7 @@ const themeConfig = {
         ["/others/get_webstorm", "申请 WebStorm"],
         ["/others/directory_organization", "目录组织"],
         ["/others/thanks_formally", "鸣谢"],
+        ["/others/copyright", "版权"],
       ],
     },
   ],
